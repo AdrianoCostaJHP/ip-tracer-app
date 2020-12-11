@@ -36,7 +36,7 @@ export default function Localiza() {
         <KeyboardAvoidingView enabled={Platform.OS === 'ios'} behavior='padding' style={styles.container}>
             <View style={styles.container}>
                 <Image style={styles.logoImage} source={logoImage}/>
-                <Text>Consumindo a API com sucesso !</Text>
+                <Text>Localizando com Sucesso !</Text>
                 <TextInput
                     style={styles.inputIP}
                     placeholder="Insira o numero IP"
