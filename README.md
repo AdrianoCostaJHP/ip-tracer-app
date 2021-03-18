@@ -6,7 +6,7 @@
 Localiza IP
 </h1>
 
-<p align = "center"> Um App que consegue determinar a região de um IP </p>
+<p align = "center"> O App consegue mostrar a região onde está um endereço IP </p>
 
 <p align = "center">
   <a href="https://opensource.org/licenses/MIT">
