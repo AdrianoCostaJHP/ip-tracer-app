@@ -29,3 +29,7 @@ Descreva aqui a forma de usar / instalar seu projeto
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - consulte a página [LICENÇA] (https://opensource.org/licenses/MIT) para obter detalhes.
+
+---
+
+Feito por ♥ por Adriano Costa :wave: [Entrar em contato!](https://www.linkedin.com/in/adriano-costa-101395141/)
