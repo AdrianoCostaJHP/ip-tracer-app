@@ -21,9 +21,25 @@ Localiza IP
 
 - ⚛️ ** React Js ** - Uma biblioteca JavaScript para construir interfaces de usuário
 
-## Começando
 
-Descreva aqui a forma de usar / instalar seu projeto
+
+## :information_source:  Começando
+
+Para clonar e executar este aplicativo, você precisará :
+
+```bash
+# Clone this repository
+$ git clone https://github.com/AdrianoCostaJHP/Localiza-IP.git
+
+# Go into the repository
+$ cd Localiza-IP
+
+# Install dependencies
+$ yarn
+
+# Run the app 
+$ expo start
+```
 
 
 ## Licença
