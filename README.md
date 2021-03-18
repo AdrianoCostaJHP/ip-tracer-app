@@ -19,7 +19,7 @@ Localiza IP
 ## :rocket: Características
 [//]: # (Adicione os recursos do seu projeto aqui :)
 
-- ⚛️ ** ReactNative ** - Uma biblioteca JavaScript para construir interfaces de usuário
+- ⚛️ ** React Native ** - Uma biblioteca JavaScript para construir interfaces de usuário
 -    ** Expo ** - É um conjunto de ferramentas e serviços criados em torno de plataformas React Native
 
 
