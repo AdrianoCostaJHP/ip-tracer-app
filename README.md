@@ -16,7 +16,7 @@ Localiza IP
 
 <hr />
 
-## Características
+## :rocket: Características
 [//]: # (Adicione os recursos do seu projeto aqui :)
 
 - ⚛️ ** React Js ** - Uma biblioteca JavaScript para construir interfaces de usuário
