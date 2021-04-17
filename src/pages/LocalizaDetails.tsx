@@ -1,70 +1,53 @@
-import React, {useEffect, useState}from 'react';
+import React, {useContext, useEffect, useState}from 'react';
+import { useNavigation } from '@react-navigation/core';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
-import {useRoute, useNavigation} from '@react-navigation/native';
+import { Context } from '../contexts/DataContext';
 
-interface mapPosition{
-	latitude: number;
-	longitude: number;
-	city: string;
-	country_name: string;
-	ip: string;
-	region_name: string;
-}
     
 export default function LocalizaDetails(){
     const navigation =  useNavigation();
-    const route = useRoute();
-    const params = route.params as mapPosition;
-    
-    const[latitude, setLatitude] = useState(0);
-	const[longitude, setLongitude] = useState(0);
-	const[city, setCity] = useState('');
-	const[country_name, setCountry_name] = useState('');
-	const[ip, setIP] = useState('');
-	const[region_name, setRegion_name] = useState('');
+    const {data} = useContext(Context); 
+	const[loading, setLoading] = useState(true);
 	
 	useEffect (() => {
-		
-		setLatitude(params.latitude);
-		setLongitude(params.longitude);
-		setCity(params.city);
-		setCountry_name(params.country_name);
-		setIP(params.ip);
-		setRegion_name(params.region_name);
-	},[
-		params.latitude, 
-		params.longitude, 
-		params.city, 
-		params.country_name, 
-		params.ip, 
-		params.region_name
-	]);
+        if(data){
+			setLoading(false);
+		}
+	},[]);
+
+    if(loading){
+		return(
+			<View style={styles.container}>
+				<Text>...Loading</Text>
+			</View>
+		)
+	}
 
     return (
         <ScrollView style={styles.container} contentContainerStyle={{ padding: 24 }}>
             <Text style={styles.label}>Cidade</Text>
             <View style={styles.item}>
-                <Text>{city}</Text>
+                <Text>{data.city}</Text>
             </View>
 
             <Text style={styles.label}>Estado</Text>
             <View style={styles.item}>
-                <Text>{region_name}</Text>
+                <Text>{data.region_name}</Text>
             </View>
 
             <Text style={styles.label}>Pais</Text>
             <View style={styles.item}>
-                <Text>{country_name}</Text>
+                <Text>{data.country_name}</Text>
             </View>
 
             <Text style={styles.label}>Latitude</Text>
             <View style={styles.item}>
-                <Text>{latitude}</Text>
+                <Text>{data.latitude}</Text>
             </View>
 
             <Text style={styles.label}>Longitude</Text>
             <View style={styles.item}>
-                <Text>{longitude}</Text>
+                <Text>{data.longitude}</Text>
             </View>
 
             <Text style={styles.label}>Provedor de Internet</Text>
@@ -74,7 +57,7 @@ export default function LocalizaDetails(){
 
             <Text style={styles.label}>IP</Text>
             <View style={styles.item}>
-                <Text>{ip}</Text>
+                <Text>{data.ip}</Text>
             </View>
 
         </ScrollView>
