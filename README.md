@@ -1,9 +1,9 @@
 <h1 align = "center">
 <br>
-  <img src = "https://image.flaticon.com/icons/png/512/1201/1201643.png" alt = "Localiza IP" width = "120">
+  <img src = "https://image.flaticon.com/icons/png/512/1201/1201643.png" alt = "IpTracer" width = "120">
 <br>
 <br>
-Localiza IP
+IpTracer
 </h1>
 
 <p align = "center"> O App consegue mostrar a região onde está um endereço IP </p>
@@ -30,10 +30,10 @@ Para clonar e executar este aplicativo, você precisará :
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/AdrianoCostaJHP/Localiza-IP.git
+$ git clone https://github.com/AdrianoCostaJHP/IpTracer.git
 
 # Go into the repository
-$ cd Localiza-IP
+$ cd IpTracer
 
 # Install dependencies
 $ yarn
